@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "deno.window",
+      "deno.unstable"
+    ]
+  },
+  "lint": {
+    "files": {
+      "exclude": ["node_modules"]
+    }
+  },
+  "fmt": {
+    "options": {
+      "useTabs": false,
+      "lineWidth": 80,
+      "indentWidth": 2,
+      "singleQuote": false,
+      "proseWrap": "preserve"
+    }
+  },
+  "tasks": {
+    "start": "deno run --allow-all --unstable ./bin/modicon.ts",
+    "script:update-readme": "deno run --allow-all --unstable ./sbin/update-readme.ts"
+  },
+  "importMap": "./import_map.json"
+}

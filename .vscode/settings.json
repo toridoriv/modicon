@@ -1,0 +1,50 @@
+{
+  "[javascript][json][jsonc][typescript][markdown]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[swift]": {
+    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true
+  },
+  "[handlebars]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false
+    },
+    "editor.formatOnSave": false
+  },
+  "deno.codeLens.testArgs": [
+    "--allow-all",
+    "--unstable"
+  ],
+  "deno.config": "./deno.jsonc",
+  "deno.enable": true,
+  "deno.inlayHints.functionLikeReturnTypes.enabled": true,
+  "deno.inlayHints.parameterNames.enabled": "all",
+  "deno.internalDebug": false,
+  "deno.lint": true,
+  "deno.suggest.autoImports": true,
+  "deno.suggest.completeFunctionCalls": true,
+  "deno.suggest.imports.autoDiscover": true,
+  "deno.codeLens.implementations": true,
+  "deno.codeLens.references": true,
+  "deno.codeLens.referencesAllFunctions": true,
+  "deno.suggest.names": true,
+  "deno.suggest.paths": true,
+  "deno.unstable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.quickSuggestions": {
+    "comments": true,
+    "other": true,
+    "strings": true
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "deno.importMap": "./import_map.json",
+  "apple-swift-format.configSearchPaths": [
+    ".swift-format.json"
+  ]
+}

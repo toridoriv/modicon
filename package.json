@@ -1,0 +1,35 @@
+{
+  "name": "@toridoriv/modicon",
+  "version": "0.1.0",
+  "description": "A command line application to modify MacOS folders and application icons",
+  "files": [
+    "bin",
+    "app",
+    "lib"
+  ],
+  "bin": {
+    "modicon": "./bin/modicon.js"
+  },
+  "author": {
+    "name": "Victoria Rodriguez",
+    "email": "vrodriguezfe@icloud.com",
+    "url": "https://github.com/toridoriv"
+  },
+  "license": "MPL-2.0",
+  "homepage": "https://github.com/toridoriv/modicon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toridoriv/modicon.git"
+  },
+  "scripts": {
+    "version": "deno task script:update-readme && git add README.md",
+    "start": "deno task start"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "tag": "latest"
+  },
+  "dependencies": {
+    "deno-bin": "^1.28.1"
+  }
+}
